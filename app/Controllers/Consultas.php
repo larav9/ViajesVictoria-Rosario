@@ -43,6 +43,14 @@ class Consultas extends BaseController
             ]);
         }
 
+        if (session()->get('rol') !== 'pasajero') {
+            return $this->response->setJSON([   //solo los usuarios con rol pasajero pueden registrar consultas
+                'success' => false,
+                'mensaje' => 'Solo los pasajeros pueden realizar consultas.',
+                'token'   => csrf_hash()
+            ]);
+        }
+
         $idViaje = $this->request->getPost('id_viaje');
         $viajeModel = new ViajeModel();
         $viaje = $viajeModel->find($idViaje); // se busca el viaje para ver q exista
