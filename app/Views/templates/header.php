@@ -40,7 +40,7 @@
                     <a href="<?= base_url('chofer/gestion') ?>" class="nav-item <?= url_is('chofer/gestion') ? 'activo' : '' ?>">Mi Gestión</a>
                     <a href="<?= base_url('consultas') ?>" class="nav-item <?= url_is('consultas') ? 'activo' : '' ?>">Consultas</a>
                     <a href="<?= base_url('reportes') ?>" class="nav-item <?= url_is('reportes') ? 'activo' : '' ?>">Reportes</a>
-
+                    <a href="<?= base_url('mapa') ?>" class="nav-item <?= url_is('mapa') ? 'activo' : '' ?>">Mapa de Viajes</a>
 
                 <?php endif; ?>
                 <a href="<?= base_url('logout') ?>" class="nav-item nav-logout" onclick="return confirm('¿Desea salir?')">Cerrar Sesión</a>
