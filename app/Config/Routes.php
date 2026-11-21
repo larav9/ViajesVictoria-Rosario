@@ -42,4 +42,7 @@ $routes->group('', ['filter' => 'auth'], static function ($routes) {
     $routes->get('consultas', 'Consultas::index');
     $routes->post('consultas/guardar', 'Consultas::guardar');
 
+      //reportes para chofer
+    $routes->get('reportes', 'Reportes::index');
+
 });
