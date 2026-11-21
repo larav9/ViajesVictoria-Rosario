@@ -1,0 +1,20 @@
+# Archivos temporales, logs y sesiones de CodeIgniter 4
+writable/cache/*
+!writable/cache/index.html
+writable/logs/*
+!writable/logs/index.html
+writable/session/*
+!writable/session/index.html
+writable/uploads/*
+!writable/uploads/index.html
+writable/debugbar/*
+
+
+# Archivos del sistema operativo y editor (Windows / VS Code)
+Thumbs.db
+desktop.ini
+.DS_Store
+.vscode/
+
+
+.env
